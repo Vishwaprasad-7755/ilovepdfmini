@@ -1,0 +1,55 @@
+/* Global */
+:root{
+  --bg-start:#f6f9ff;
+  --bg-end:#fef6ff;
+  --brand:#c1121f;
+  --brand-2:#ff4d6d;
+  --text:#1b1e28;
+}
+html,body{height:100%}
+body{
+  font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color:var(--text);
+  background: radial-gradient(1200px 600px at 10% -10%, #e8f0ff 10%, transparent 40%),
+              radial-gradient(1000px 500px at 110% 0%, #ffe9f3 10%, transparent 35%),
+              linear-gradient(180deg, var(--bg-start), var(--bg-end));
+}
+
+/* Navbar */
+.modern-navbar{backdrop-filter: saturate(120%) blur(6px); background: rgba(20,20,24,0.85)!important;}
+.modern-navbar .nav-link{position:relative; color:#cfd8e3!important; transition:color .2s ease}
+.modern-navbar .nav-link:hover{color:#fff!important}
+.nav-link-underline::after{content:''; position:absolute; left:.5rem; right:.5rem; bottom:6px; height:2px; background:linear-gradient(90deg, var(--brand), var(--brand-2)); transform:scaleX(0); transform-origin:left; transition:transform .25s ease}
+.nav-link-underline:hover::after{transform:scaleX(1)}
+.logo-circle{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#fff;font-size:18px}
+.btn-gradient{background: linear-gradient(135deg, var(--brand), var(--brand-2)); color:#fff; border:none; box-shadow: 0 6px 14px rgba(255,77,109,.35); transition: transform .15s ease, box-shadow .15s ease}
+.btn-gradient:hover{transform: translateY(-1px); box-shadow: 0 10px 18px rgba(255,77,109,.45)}
+
+/* Hero */
+.hero{padding:64px 0 16px}
+.gradient-text{background: linear-gradient(90deg, #111, var(--brand), var(--brand-2)); -webkit-background-clip: text; background-clip: text; color: transparent}
+
+/* Cards */
+.card{border:none; border-radius:16px}
+.tool-card{transition: transform .2s ease, box-shadow .2s ease}
+.tool-card:hover{transform: translateY(-6px); box-shadow: 0 16px 40px rgba(0,0,0,.12)}
+.tool-icon{width:48px;height:48px;border-radius:12px;display:inline-flex;align-items:center;justify-content:center;background:linear-gradient(135deg, rgba(193,18,31,.14), rgba(255,77,109,.14)); color:var(--brand); font-size:22px}
+.btn-gradient{border-radius:10px}
+
+/* Stacked tools layout */
+.tool-card--large{border-radius:18px}
+.tool-icon--xl{width:60px;height:60px;font-size:28px}
+.tools-stack .card{padding: 6px 8px}
+.tools-stack .card .card-body{padding: 20px 22px}
+.tools-stack .card:hover{transform: translateY(-4px); box-shadow: 0 18px 44px rgba(0,0,0,.14)}
+
+/* Forms */
+.form-control:focus{box-shadow:0 0 0 .25rem rgba(255,77,109,.15); border-color: var(--brand-2)}
+
+/* Utilities */
+.tools-grid{padding-bottom:64px}
+
+@media (max-width: 575.98px){
+  .hero{padding:48px 0 8px}
+}
+

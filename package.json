@@ -1,0 +1,31 @@
+{
+  "name": "ilovepdf",
+  "version": "1.0.0",
+  "description": "Mini iLovePDF clone with Node.js, Express, EJS",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon ilovepdf/server.js",
+    "start": "node ilovepdf/server.js",
+    "test": "echo 'No tests yet' && exit 0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cookie-parser": "^1.4.7",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "express-ejs-layouts": "^2.5.1",
+    "jsonwebtoken": "^9.0.2",
+    "mammoth": "^1.10.0",
+    "multer": "^2.0.2",
+    "pdf-lib": "^1.17.1",
+    "pdfkit": "^0.17.2",
+    "puppeteer": "^24.20.0",
+    "uuid": "^13.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
